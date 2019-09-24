@@ -1,0 +1,22 @@
+.btn-style(@bg-color, @font-color){
+    background: @bg-color;
+    color: @font-color;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    padding: 2% 4%;
+    cursor: pointer;
+    outline: none;
+    .hvr();
+}
+
+.hvr(){
+    &:hover{
+        background:@font-color;
+        color:@bg-color;
+    }
+}
+.center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
