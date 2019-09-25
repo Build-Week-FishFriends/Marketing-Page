@@ -6,18 +6,26 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            @media @phone{
+                flex-direction: column;
+            }
 
             div{
                 width: 35%;
                 padding: 4%;
+                @media @phone{
+                    width: 100%;
+                    text-align: center;
+                }
+            h2, h3{
+                padding: 2%;
+                margin: 1%;
             }
 
-            div .github-btn{
-                background: green;
-                border-radius: 10px;
-                padding: 2% 4%;
-                outline: none;
-                
+            .github-btn{
+                .btn-style(@btn-bg-color, @nav-bg);
+                padding: 3% 5%;
+            }
                 a{
                     text-decoration: none;
                     font-size: 1.8rem;

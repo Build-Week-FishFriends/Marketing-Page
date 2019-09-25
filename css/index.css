@@ -173,6 +173,9 @@ p {
     max-width: 100%;
   }
 }
+.nav-content img {
+  margin-bottom: 1%;
+}
 .nav-content nav {
   width: 100%;
   text-align: center;
@@ -343,17 +346,41 @@ footer .social-links div a {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .container-home .body-content-about .team {
+    flex-direction: column;
+  }
+}
 .container-home .body-content-about .team div {
   width: 35%;
   padding: 4%;
 }
-.container-home .body-content-about .team div .github-btn {
-  background: green;
-  border-radius: 10px;
-  padding: 2% 4%;
-  outline: none;
+@media (max-width: 500px) {
+  .container-home .body-content-about .team div {
+    width: 100%;
+    text-align: center;
+  }
 }
-.container-home .body-content-about .team div .github-btn a {
+.container-home .body-content-about .team div h2,
+.container-home .body-content-about .team div h3 {
+  padding: 2%;
+  margin: 1%;
+}
+.container-home .body-content-about .team div .github-btn {
+  background: #8D8741;
+  color: #FBEEC1;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  padding: 1% 2%;
+  cursor: pointer;
+  outline: none;
+  padding: 3% 5%;
+}
+.container-home .body-content-about .team div .github-btn:hover {
+  background: #FBEEC1;
+  color: #659DBD;
+}
+.container-home .body-content-about .team div a {
   text-decoration: none;
   font-size: 1.8rem;
   color: #123607;
