@@ -1,5 +1,4 @@
 .nav-content {
-  max-width: 60%;
   width: 100%;
   margin: 0 auto;
   .center();
@@ -22,10 +21,6 @@
     }
   }
   button {
-    .btn-style(@btn-bg-color, @porcelain);
-    @media @phone {
-      width: 100%;
-      padding: 7% 0;
-    }
+    .btn-style(@btn-bg-color, @nav-bg);    
   }
 }

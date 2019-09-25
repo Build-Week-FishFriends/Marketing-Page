@@ -4,25 +4,47 @@ footer {
   width: 100%;
   margin-top: 4%;
   border-radius: 10px;
+  @media @phone{
+    flex-direction: column;    
+  }
   .contact {
     padding-right: 30%;
     padding-left: 2%;
+    @media @phone{
+      padding: 1% 2%;    
+    }
     h3 {
       text-align: left;
       margin-bottom: 15%;
+      @media @phone{
+        text-align: center; 
+        margin-bottom: 10%;   
+      }
     }
     div a {
       font-size: 1.8rem;
       text-decoration: none;
       color: @nav-font;
       padding-bottom: 25%;
+      @media @phone{
+        padding-left: 25%;
+        padding-bottom: 5%;    
+      }
     }
   }
   .links {
     padding-right: 30%;
+    @media @phone{
+      padding: 1% 2%;    
+    }
     h3 {
       text-align: left;
       margin-bottom: 15%;
+      @media @phone{
+        text-align: center; 
+        margin-top: 5%;   
+        margin-bottom: 10%;
+      }
     }
     nav {
       display: flex;
@@ -32,13 +54,25 @@ footer {
         text-decoration: none;
         color: @nav-font;
         padding-bottom: 15%;
+        @media @phone{
+          padding-left: 40%;
+          padding-bottom: 5%;    
+        }
       }
     }
   }
   .social-links{
+    @media @phone{
+      padding: 1% 2%;    
+    }
     h3 {
         text-align: left;
         margin-bottom: 15%;
+        @media @phone{
+          text-align: center; 
+          margin-top: 5%;   
+          margin-bottom: 10%;
+        }
       }
       div {
           display: flex;
@@ -49,6 +83,9 @@ footer {
         text-decoration: none;
         color: @nav-font;
         padding-bottom: 25%;
+        @media @phone{
+          padding-bottom: 5%;    
+        }
       }
     }
   }

@@ -157,15 +157,14 @@ p {
   max-width: 100%;
 }
 .nav-content {
-  max-width: 60%;
   width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #F6F6F6;
-  border: 1px double #F1F1F1;
+  background: #FBEEC1;
+  border: 1px double #BC986A;
   border-radius: 10px;
   padding: 1%;
 }
@@ -181,55 +180,83 @@ p {
 .nav-content nav a {
   text-decoration: none;
   font-size: 2rem;
-  color: #454A59;
+  color: #123607;
   margin: 2% 4%;
 }
 .nav-content button {
-  background: #1E90FF;
-  color: #F6F7F8;
+  background: #8D8741;
+  color: #FBEEC1;
   font-size: 1.8rem;
   border-radius: 10px;
-  padding: 2% 4%;
+  padding: 1% 2%;
   cursor: pointer;
   outline: none;
 }
 .nav-content button:hover {
-  background: #F6F7F8;
-  color: #1E90FF;
-}
-@media (max-width: 500px) {
-  .nav-content button {
-    width: 100%;
-    padding: 7% 0;
-  }
+  background: #FBEEC1;
+  color: #659DBD;
 }
 footer {
-  background: #F6F6F6;
+  background: #FBEEC1;
   display: flex;
   width: 100%;
   margin-top: 4%;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+  }
+}
 footer .contact {
   padding-right: 30%;
   padding-left: 2%;
+}
+@media (max-width: 500px) {
+  footer .contact {
+    padding: 1% 2%;
+  }
 }
 footer .contact h3 {
   text-align: left;
   margin-bottom: 15%;
 }
+@media (max-width: 500px) {
+  footer .contact h3 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+}
 footer .contact div a {
   font-size: 1.8rem;
   text-decoration: none;
-  color: #454A59;
+  color: #123607;
   padding-bottom: 25%;
+}
+@media (max-width: 500px) {
+  footer .contact div a {
+    padding-left: 25%;
+    padding-bottom: 5%;
+  }
 }
 footer .links {
   padding-right: 30%;
 }
+@media (max-width: 500px) {
+  footer .links {
+    padding: 1% 2%;
+  }
+}
 footer .links h3 {
   text-align: left;
   margin-bottom: 15%;
+}
+@media (max-width: 500px) {
+  footer .links h3 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
 }
 footer .links nav {
   display: flex;
@@ -238,12 +265,30 @@ footer .links nav {
 footer .links nav a {
   font-size: 1.8rem;
   text-decoration: none;
-  color: #454A59;
+  color: #123607;
   padding-bottom: 15%;
+}
+@media (max-width: 500px) {
+  footer .links nav a {
+    padding-left: 40%;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
+  footer .social-links {
+    padding: 1% 2%;
+  }
 }
 footer .social-links h3 {
   text-align: left;
   margin-bottom: 15%;
+}
+@media (max-width: 500px) {
+  footer .social-links h3 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
 }
 footer .social-links div {
   display: flex;
@@ -253,8 +298,16 @@ footer .social-links div {
 footer .social-links div a {
   font-size: 1.8rem;
   text-decoration: none;
-  color: #454A59;
+  color: #123607;
   padding-bottom: 25%;
+}
+@media (max-width: 500px) {
+  footer .social-links div a {
+    padding-bottom: 5%;
+  }
+}
+.container-home {
+  background: #659DBD;
 }
 .container-home .intro-img {
   width: 100%;
@@ -303,5 +356,5 @@ footer .social-links div a {
 .container-home .body-content-about .team div .github-btn a {
   text-decoration: none;
   font-size: 1.8rem;
-  color: #454A59;
+  color: #123607;
 }
